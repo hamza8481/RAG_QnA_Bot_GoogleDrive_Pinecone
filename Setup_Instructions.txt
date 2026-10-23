@@ -1,0 +1,8 @@
+Setup and Deployment Instructions
+
+1. Import Workflow: Import RAG_QnA_Bot_GoogleDrive_Pinecone.json into n8n.
+2. Configure Credentials:
+   a. OpenAI: Add your API key to both Language Model and Embedding nodes.
+   b. Pinecone: Add your API key and update the Index Name and Namespace.
+   c. Google Drive: Connect OAuth2 credentials and specify the Folder ID to monitor.
+3. Activate: Toggle the workflow to Active to start polling Google Drive and listening for chat messages.

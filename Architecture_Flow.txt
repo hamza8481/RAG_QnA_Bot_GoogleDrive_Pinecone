@@ -1,0 +1,17 @@
+DATA INGESTION PIPELINE
+[Google Drive Folder] 
+      | (New PDF File)
+      v
+[File Download] --> [PDF Loader] --> [Text Splitter]
+                                           |
+                                           v
+                                [Pinecone Vector DB]
+
+AI AGENT PIPELINE
+[User Chat] --> [AI Agent] <--------> [Calculator Tool]
+                     |
+                     v
+             [Vector Store QnA]
+                     |
+                     v
+            [Pinecone Vector DB] (Retrieves Context)
